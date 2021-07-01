@@ -29,10 +29,10 @@ await page.waitForTimeout(5 * 1000);
 await page.type("input[name='username']", "kittens__only");
 await page.type("input[name='password']", "ZNsz75wv3CGSEA2%%\n");
 await page.waitForTimeout(5 * 1000);
-// await page.goto("https://www.instagram.com/cats_of_instagram");
-// await page.click("a[href$='/followers/']");
-await page.goto("https://www.instagram.com/p/CQwNmZzh57X");
-await page.click("a[href$='liked_by/']");
+await page.goto("https://www.instagram.com/cats_of_instagram");
+await page.click("a[href$='/followers/']");
+// await page.goto("https://www.instagram.com/p/CQwNmZzh57X");
+// await page.click("a[href$='liked_by/']");
 await page.waitForXPath("//button[text()='Follow']");
 
 const keeper = new state();
