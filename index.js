@@ -32,7 +32,7 @@ await page.waitForTimeout(5 * 1000);
 await page.goto("https://www.instagram.com/cats_of_instagram");
 await page.click("a[href$='/followers/']");
 await page.waitForXPath("//button[text()='Follow']");
-await page.waitForTimeout(5 * 1000);
+await page.waitForTimeout(10 * 1000);
 // await page.goto("https://www.instagram.com/p/CQwNmZzh57X");
 // await page.click("a[href$='liked_by/']");
 
