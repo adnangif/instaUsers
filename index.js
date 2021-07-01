@@ -29,7 +29,9 @@ await page.waitForTimeout(5 * 1000);
 await page.type("input[name='username']", "kittens__only");
 await page.type("input[name='password']", "ZNsz75wv3CGSEA2%%\n");
 await page.waitForTimeout(5 * 1000);
-await page.goto("https://www.instagram.com/cats_of_instagram");
+// await page.goto("https://www.instagram.com/cats_of_instagram");
+// await page.goto("https://www.instagram.com/cats.kuties");
+await page.goto("https://www.instagram.com/borikimo/");
 await page.click("a[href$='/followers/']");
 await page.waitForXPath("//button[text()='Follow']");
 await page.waitForTimeout(10 * 1000);
@@ -55,4 +57,4 @@ const informer = setInterval(async () => {
 		const lastItem = arr[arr.length - 1];
 		lastItem.scrollIntoView();
 	});
-}, 2000);
+}, 1000);
